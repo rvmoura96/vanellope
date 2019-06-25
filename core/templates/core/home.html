@@ -11,29 +11,32 @@
 <h2>vanellope</h2>
 <h4>File glitcher</h4>
 
-
 <table>
     <thead>
-        <th>Before</th>
-        <th>After</th>
+    <th>Before</th>
+    <th>After</th>
     </thead>
     <tbody>
+    <tr>
         <td><img src="{% static 'img/examples/pic.jpg' %}" alt=""></td>
         <td><img src="{% static 'img/examples/new_pic.jpg' %}" alt=""></td>
-
+    </tr>
+    <tr>
+        <td>command</td>
+        <td><pre>vanellope -i examples/pic.jpg -o examples/new_pic.jpg -t 4 -s 30</pre></td>
+    </tr>
     </tbody>
 </table>
 
-
-|command | `vanellope -i examples/pic.jpg -o examples/new_pic.jpg -t 4 -s 30`
-
-## How to install vanellope
-```sh
+<h4>How to install vanellope</h4>
+<pre>
+sh
 python setup.py install
-```
+</pre>
 
-## Usage
-```
+<h4>Usage</h4>
+
+<pre>
 ❯❯❯ vanellope --help
 Usage: vanellope [OPTIONS]
 
@@ -45,12 +48,8 @@ Options:
   -t INTEGER              Times the operation will be applied
   -size, -bs, -s INTEGER  Size of the part of the file that will be glitched
   --help                  Show this message and exit.
-```
-
-## TODO
-- [ ] Code more tests
-- [ ] Add click option to select glitch operation
-- [ ] Add more option to glitch
+    vanellope -i examples/pic.jpg -o examples/new_pic.jpg -t 4 -s 30
+</pre>
 
 </body>
 </html>

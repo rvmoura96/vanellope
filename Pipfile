@@ -9,6 +9,8 @@ tox = "*"
 
 [packages]
 click = "*"
+django = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"
